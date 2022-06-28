@@ -1,0 +1,302 @@
+/*Start Rules*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --tran: ease-in-out all .3s;
+    --padd50: 50px;
+    --padd100: 100px;
+    --padd150: 150px;
+    --padd200: 200px;
+    --white: #fff;
+    --back-color: #F9FAFC;
+    --gray: #ccc;
+    --black: #333;
+    --orange: #fbb034;
+    --facebook: #1877f2;
+    --youtube: #ff0000;
+    --instgram: #f77737;
+    --google: #34a853;
+    --main-color: #0065ff;
+    --alt-main-color0: #2e82ff;
+    --alt-main-color: #0052cc;
+    --linear-color: #eae6ff;
+    --overColor: rgb(0, 0, 0, .4);
+    --box-shadow: 0 1px 10px rgb(31 31 31 / 12%), 0 1px 15px rgb(31 31 31 / 12%);
+    --box-shadow-sign: rgb(0 0 0 / 10%) 0 0 10px;
+    --fontw100: 100;
+    --fontw200: 200;
+    --fontw300: 300;
+    --fontw500: 500;
+    --fontw600: 600;
+    --fontw700: 700;
+    --fontw800: 800;
+    --fontw900: 900;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--back-color);
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*End Rules*/
+
+
+/*Start Framework*/
+
+.contain {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.scroll-header {
+    position: fixed !important;
+    box-shadow: var(--box-shadow) !important;
+    background-color: var(--white) !important;
+    z-index: 999;
+}
+
+.overlay {
+    position: absolute;
+    background-color: var(--overColor);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    width: fit-content;
+}
+
+button {
+    letter-spacing: .8px;
+}
+
+.logo {
+    gap: 10px;
+    height: 80px;
+}
+
+.logo .icon i {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.logo span {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: var(--fontw700);
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -9999;
+    display: none !important;
+}
+
+.pop-up-body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    line-height: 1.7;
+    width: 85%;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+}
+
+address {
+    gap: 10px;
+    font-style: normal;
+}
+
+address span {
+    font-size: 22px;
+    font-weight: var(--fontw600);
+    text-transform: uppercase;
+}
+
+address h2 {
+    font-style: normal;
+    font-size: 40px;
+    font-weight: var(--fontw700);
+}
+
+address p {
+    font-size: 20px;
+    color: var(--black);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-start {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.grid-end {
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*End Framework*/
+
+
+/*Start Responsive*/
+
+@media (max-width:1200px) {
+    .contain {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width:992px) {
+    .contain {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    button,
+    input,
+    button.btn,
+    input.btn {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    address span {
+        font-size: 20px;
+    }
+    address h2 {
+        font-size: 30px;
+    }
+    address p {
+        font-size: 18px;
+    }
+    p {
+        width: 90%;
+        font-size: 18px;
+    }
+    .logo {
+        height: 75px;
+    }
+    .logo .icon i {
+        font-size: 25px;
+    }
+    .logo span {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:768px) {
+    .contain {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    button,
+    input,
+    button.btn,
+    input.btn {
+        padding: 8px 22px;
+        font-size: 15px;
+    }
+    address h2 {
+        font-size: 25px;
+    }
+    address p {
+        font-size: 16px;
+    }
+    p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .logo {
+        height: 50px;
+    }
+    .logo .icon i {
+        font-size: 22px;
+    }
+    .logo span {
+        font-size: 22px;
+    }
+}
+
+
+/*End Responsive*/

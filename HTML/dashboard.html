@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/fontawesome.min.css">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="../CSS/fontCairo.css">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/framework.css">
+
+    <!--Icon Of Page-->
+    <link rel="icon" href="../imgs/icon.png">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!--Start Header-->
+            <header>
+                <div class="contain flex-between">
+                    <div class="logo flex-start">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <span class="name">Pro-Man</span>
+                    </div>
+
+                    <!-- <nav class="flex-end">
+                        <ul class="log-links flex-end">
+                            <li class="link flex-center">
+                                <a href="#">dashboard</a>
+                            </li>
+                            <li class="link flex-center">
+                                <a href="#">projects</a>
+                            </li>
+                            <li class="link flex-center">
+                                <a href="#">news</a>
+                            </li>
+                            <li class="link flex-center">
+                                <a href="#">Profile</a>
+                            </li>
+                        </ul>
+                    </nav> -->
+                </div>
+            </header>
+            <!--End Header-->
+
+            <!--Start Dashboard-->
+            <section class="dashboard">
+                <div class="contain grid-center">
+                    <address class="grid-center center">
+                        <h2>Dashboard</h2>
+                    </address>
+                    <div class="grid grid-center">
+                        <div class="left grid-center">
+                        </div>
+                        <div class="right grid-center">
+                            <div class="avatar grid-center">
+                                <picture class="center">
+                                    <img src="../imgs/teamwork.png" alt="">
+                                </picture>
+                                <div class="user center">
+                                    <span class="name">webGhoul</span>
+                                </div>
+                            </div>
+
+                            <div class="tools">
+                                <ul class="grid-center">
+                                    <li data-option="add-pro" class=" flex-between">
+                                        <span>Add New Project</span>
+                                        <img src="../imgs/add.png" alt="">
+                                    </li>
+                                    <!-- <li data-option="add-news" class=" flex-between">
+                                        <span>Add New News</span>
+                                        <img src="../imgs/add1.png" alt="">
+                                    </li> -->
+                                    <li data-option="clr-pro" class="flex-between">
+                                        <span>Clear All Projects</span>
+                                        <img src="../imgs/clear1.png" alt="">
+                                    </li>
+                                    <!-- <li data-option="clr-news" class="flex-between">
+                                        <span>Clear All News</span>
+                                        <img src="../imgs/clear2.png" alt="">
+                                    </li> -->
+                                    <li data-option="del-pro" class="flex-between">
+                                        <span>delete one Project</span>
+                                        <img src="../imgs/delete1.png" alt="">
+                                    </li>
+                                    <!-- <li data-option="del-news" class="flex-between">
+                                        <span>delete one News</span>
+                                        <img src="../imgs/delete2.png" alt="">
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Start Dashboard-->
+
+            <!--Start Add New Project-->
+            <section class="pop add-pro hide">
+                <div class="overlay"></div>
+                <div class="contain grid-center center">
+                    <address>
+                        <h2>Add New Project</h2>
+                    </address>
+                    <form class="content grid-center">
+                        <div class="title">
+                            <input type="text" required placeholder="project title">
+                        </div>
+                        <div class="start grid-center">
+                            <label for="">Start Date</label>
+                            <input type="date" required placeholder="start date">
+                        </div>
+                        <div class="end grid-center">
+                            <label for="">End Date</label>
+                            <input type="date" required placeholder="end date">
+                        </div>
+                        <div class="brief">
+                            <textarea name="" required placeholder="project brief" id="brief"></textarea>
+                        </div>
+                        <div class="btns flex-center">
+                            <div class="pro reset">
+                                <button>reset</button>
+                            </div>
+                            <div class="pro add">
+                                <button>add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--End Add New Project-->
+
+            <!-- Start Add New News-->
+            <!-- <section class="pop add-news hide">
+                <div class="overlay"></div>
+                <div class="contain grid-center center">
+                    <address>
+                        <h2>Add New News</h2>
+                    </address>
+                    <form class="content grid-center">
+                        <div class="title">
+                            <input type="text" placeholder="news title">
+                        </div>
+                        <div class="publish grid-center">
+                            <label for="">Publish Date</label>
+                            <input type="date" placeholder="publish date">
+                        </div>
+                        <div class="brief">
+                            <textarea name="" placeholder="news brief" id="brief"></textarea>
+                        </div>
+                        <div class="btns flex-center">
+                            <div class="news reset">
+                                <button>reset</button>
+                            </div>
+                            <div class="news add">
+                                <button>add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section> -->
+            <!--End Add New News -->
+
+            <!--Start Delete One Project-->
+            <section class="pop del-pro hide">
+                <div class="overlay"></div>
+                <div class="contain grid-center center">
+                    <address>
+                        <h2>Delete One Project</h2>
+                    </address>
+                    <form class="content grid-center">
+                        <div class="title">
+                            <input type="text" placeholder="Project ID">
+                        </div>
+                        <div class="btns flex-center">
+                            <div class="pro reset">
+                                <button>reset</button>
+                            </div>
+                            <div class="pro del">
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--End Delete One Project-->
+
+            <!--Start Delete One News-->
+            <!-- <section class="pop del-news hide">
+                <div class="overlay"></div>
+                <div class="contain grid-center center">
+                    <address>
+                        <h2>Delete One News</h2>
+                    </address>
+                    <form class="content grid-center">
+                        <div class="title">
+                            <input type="text" placeholder="News ID">
+                        </div>
+                        <div class="btns flex-center">
+                            <div class="news reset">
+                                <button>reset</button>
+                            </div>
+                            <div class="news del">
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section> -->
+            <!--End Delete One News-->
+
+            <!--Start Footer-->
+            <footer>
+                <div class="contain grid-center">
+                    <ul class="flex-center">
+                        <li>
+                            <a href="./signup.html">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="./logging.html">Log In</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="./dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+                    <div class="logo flex-center center">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <span class="name">Pro-Man</span>
+                    </div>
+                    <span class="center"> © Copyright <span class="year"></span>. All rights reserved.</span>
+                </div>
+            </footer>
+            <!--End Footer-->
+
+
+        </div>
+    </main>
+    <!--Script files-->
+    <script type="module" src="../JS/framework.js"></script>
+    <script type="module" src="../JS/dashboard.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

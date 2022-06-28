@@ -1,0 +1,963 @@
+/*Start Header*/
+
+header .contain {
+    gap: 50px;
+    position: absolute;
+    width: 100%;
+    transition: var(--tran);
+}
+
+header .contain nav .log-links li a {
+    color: var(--black);
+}
+
+header .contain nav .links {
+    gap: 20px;
+}
+
+header .contain nav .links .link a {
+    font-size: 22px;
+    text-transform: capitalize;
+    transition: var(--tran);
+}
+
+header .contain nav .links .link:first-child a {
+    color: var(--main-color);
+    position: relative;
+    width: fit-content;
+}
+
+header .contain nav .links .link:first-child a:hover {
+    text-decoration: underline;
+}
+
+header .contain nav .links .link:nth-child(2) a {
+    background-color: var(--main-color);
+    color: var(--white);
+    font-weight: var(--fontw700);
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+header .contain nav .links .link:nth-child(2) a:hover {
+    background-color: var(--alt-main-color);
+}
+
+header .contain nav .log-links {
+    gap: 30px;
+}
+
+header .contain nav .log-links li a {
+    font-size: 22px;
+    transition: var(--tran);
+    text-transform: capitalize;
+}
+
+header .contain nav .log-links li a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+
+/*Start Sign Footer*/
+
+header .contain.sign {
+    position: relative;
+    padding-top: var(--padd50);
+    padding-bottom: var(--padd50);
+    gap: 10px;
+}
+
+header .contain.sign>.icon {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+header .contain.sign h1 {
+    font-size: 50px;
+}
+
+
+/*End Sign Footer*/
+
+@media (max-width:992px) {
+    header .contain {
+        gap: 35px;
+    }
+    header .contain nav .links .link a {
+        font-size: 20px;
+    }
+    header .contain nav .links .link:nth-child(2) a {
+        padding: 2px 10px;
+    }
+    header .contain.sign>.icon {
+        font-size: 35px;
+    }
+    header .contain.sign h1 {
+        font-size: 40px;
+    }
+    header .contain nav .log-links {
+        gap: 25px;
+    }
+    header .contain nav .log-links li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    header .contain {
+        gap: 0px;
+        display: grid;
+        justify-content: center;
+    }
+    header .contain .logo {
+        justify-content: center;
+    }
+    header .contain nav .links .link a {
+        font-size: 16px;
+    }
+    header .contain nav .links .link:nth-child(2) a {
+        padding: 2px 8px;
+    }
+    header .contain.sign>.icon {
+        font-size: 30px;
+    }
+    header .contain.sign h1 {
+        font-size: 35px;
+    }
+    header .contain nav .log-links {
+        gap: 20px;
+        padding: 5px;
+        justify-content: center;
+    }
+    header .contain nav .log-links li a {
+        font-size: 18px;
+    }
+}
+
+
+/*End Header*/
+
+
+/*Start Main Section*/
+
+.main-section .contain {
+    background-image: linear-gradient(0deg, var(--white), var(--linear-color) 100%);
+    grid-template-columns: 58% 36%;
+    padding-top: var(--padd150);
+    padding-bottom: var(--padd100);
+    gap: 50px;
+}
+
+.main-section .contain .content {
+    gap: 30px;
+}
+
+.main-section .contain .content .info {
+    gap: 15px;
+}
+
+.main-section .contain .content .info h1 {
+    font-size: 60px;
+    font-weight: var(--fontw600);
+}
+
+.main-section .contain .content form {
+    gap: 20px;
+    grid-template-columns: 50% 35%;
+}
+
+.main-section .contain .content form input,
+.main-section .contain .content form button {
+    border-radius: 6px;
+    transition: var(--tran);
+    width: 100%;
+}
+
+.main-section .contain .content form input::placeholder {
+    color: var(--gray);
+    font-size: 20px;
+    font-weight: var(--fontw700);
+}
+
+.main-section .contain .content form input:first-child {
+    background-color: transparent;
+    border: 2px solid var(--gray);
+}
+
+.main-section .contain .content form button {
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 20px;
+    border: 2px solid var(--main-color);
+}
+
+.main-section .contain .content form button:hover {
+    cursor: pointer;
+    background-color: var(--alt-main-color);
+}
+
+.main-section .contain picture img {
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    .main-section .contain {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-section .contain .content .info h1 {
+        font-size: 50px;
+    }
+    .main-section .contain .content form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-section .contain .content form input::placeholder {
+        font-size: 18px;
+    }
+    .main-section .contain .content form input:last-child {
+        font-size: 18px;
+    }
+    .main-section .contain picture {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .main-section .contain .content form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-section .contain .content .info h1 {
+        font-size: 40px;
+    }
+    .main-section .contain .content form input::placeholder {
+        font-size: 16px;
+    }
+    .main-section .contain .content form input:last-child {
+        font-size: 16px;
+    }
+}
+
+
+/*End Main Section*/
+
+
+/*Start Doing*/
+
+.doing .contain {
+    gap: 30px;
+    padding-top: var(--padd100);
+    padding-bottom: var(--padd100);
+}
+
+.doing .contain button {
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    background-color: transparent;
+    gap: 10px;
+    color: var(--main-color);
+    transition: var(--tran);
+    font-size: 20px;
+}
+
+.doing .contain button:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.doing .contain picture img {
+    width: 100%;
+}
+
+.doing .contain .content {
+    gap: 20px;
+}
+
+.doing .contain .content .brands {
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+@media (max-width:992px) {
+    .doing .contain button {
+        border-radius: 4px;
+        font-size: 18px;
+    }
+    .doing .contain .content .brands {
+        gap: 35px;
+    }
+}
+
+@media (max-width:768px) {
+    .doing .contain button {
+        border-radius: 3px;
+        font-size: 15px;
+        padding: 7px 12px;
+    }
+    .doing .contain .content .brands {
+        gap: 20px;
+    }
+}
+
+
+/*End Doing*/
+
+
+/*Start Box*/
+
+.box .contain {
+    padding-top: var(--padd100);
+    padding-bottom: var(--padd100);
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+}
+
+.box .contain picture {
+    align-self: flex-start;
+}
+
+.box .contain picture img {
+    width: 100%;
+}
+
+.box .contain .content {
+    gap: 30px;
+    align-self: flex-start;
+}
+
+.box .contain .content .learn {
+    gap: 20px;
+    justify-content: stretch;
+}
+
+.box .contain .content .learn .more {
+    font-size: 22px;
+    gap: 10px;
+    font-weight: var(--fontw700);
+    transition: var(--tran);
+}
+
+.box .contain .content .learn .more span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.box .contain .content .learn .slide {
+    gap: 10px;
+}
+
+.box .contain .content .learn .slide span {
+    font-size: 20px;
+    font-weight: var(--fontw700);
+}
+
+.box .contain .content .learn .slide ul {
+    list-style: disc;
+    justify-content: stretch;
+    margin-left: 50px;
+}
+
+.box .contain .content .learn .slide ul li {
+    font-size: 18px;
+}
+
+@media (max-width:992px) {
+    .box.detail .contain picture,
+    .box.power .contain picture {
+        order: -1;
+    }
+    .box .contain {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box .contain .content .learn .more {
+        font-size: 22px;
+    }
+    .box .contain .content .learn .slide span {
+        font-size: 20px;
+    }
+    .box .contain .content .learn .slide ul {
+        margin-left: 40px;
+    }
+    .box .contain .content .learn .slide ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    .box .contain {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box .contain .content .learn .more {
+        font-size: 20px;
+    }
+    .box .contain .content .learn .slide span {
+        font-size: 18px;
+    }
+    .box .contain .content .learn .slide ul {
+        margin-left: 30px;
+    }
+    .box .contain .content .learn .slide ul li {
+        font-size: 16px;
+    }
+}
+
+
+/*End Box*/
+
+
+/*Start Sign*/
+
+.sign .contain {
+    padding-top: var(--padd100);
+    padding-bottom: var(--padd100);
+    justify-content: stretch;
+}
+
+.sign .contain form {
+    width: 50%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-sign);
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: stretch;
+    gap: 20px;
+}
+
+.sign .contain form .in {
+    padding: 10px;
+    justify-content: stretch;
+}
+
+.sign .contain form .in input {
+    background-color: var(--white);
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+    color: var(--main-color);
+    transition: var(--tran);
+}
+
+.sign .contain form .in input::placeholder {
+    font-size: 15px
+}
+
+.sign .contain form .in input:focus {
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+.sign .contain form .in input[type='submit'] {
+    background-color: var(--white);
+    border: none;
+    box-shadow: var(--box-shadow);
+    font-weight: var(--fontw700);
+}
+
+.sign .contain form .in input[type='submit']:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.sign .contain form h3 {
+    font-size: 25px;
+}
+
+.sign .contain form a {
+    color: var(--main-color);
+    font-weight: normal;
+    font-size: 18px;
+    transition: var(--tran);
+}
+
+.sign .contain form a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:992px) {
+    .sign .contain form {
+        width: 80%;
+        padding: 30px;
+        border-radius: 8px;
+    }
+    .sign .contain form .in input {
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .sign .contain form .in input::placeholder {
+        font-size: 18px
+    }
+    .sign .contain form h3 {
+        font-size: 22px;
+    }
+    .sign .contain form a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    .sign .contain form {
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+    .sign .contain form .in input {
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    .sign .contain form .in input::placeholder {
+        font-size: 15px
+    }
+    .sign .contain form h3 {
+        font-size: 20px;
+    }
+    .sign .contain form a {
+        font-size: 16px;
+    }
+}
+
+
+/*End Sign*/
+
+
+/*Start Dashboard*/
+
+.dashboard .contain {
+    padding-top: var(--padd150);
+    padding-bottom: var(--padd100);
+    gap: 50px;
+    justify-content: stretch;
+}
+
+.dashboard .contain .grid {
+    grid-template-columns: 70% 28%;
+    justify-content: stretch;
+    gap: 30px;
+}
+
+.dashboard .contain .grid>div {
+    justify-content: stretch;
+    align-self: flex-start;
+}
+
+.dashboard .contain .grid .left {
+    gap: 50px;
+}
+
+.dashboard .contain .grid .left .project {
+    gap: 30px;
+    position: relative;
+    counter-increment: count;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    justify-content: stretch;
+}
+
+.dashboard .contain .grid .left .project h3 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.dashboard .contain .grid .left .project .dates {
+    justify-content: stretch;
+}
+
+.dashboard .contain .grid .left .project .dates span {
+    color: var(--main-color);
+}
+
+.dashboard .contain .grid .left .project .news {
+    gap: 10px;
+}
+
+.dashboard .contain .grid .left .project .news a {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: var(--fontw700);
+    transition: var(--tran);
+}
+
+.dashboard .contain .grid .left .project .news:hover,
+.dashboard .contain .grid .left .project:hover .news a {
+    color: var(--main-color);
+}
+
+.dashboard .contain .grid .left .project::after {
+    content: counter(count);
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    transition: var(--tran);
+}
+
+.dashboard .contain .grid .left .project:hover::after {
+    border: 2px solid var(--main-color);
+}
+
+.dashboard .contain .grid .left .project:hover {
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+}
+
+.dashboard .contain .grid .right {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.dashboard .contain .grid .right .avatar {
+    position: relative;
+    padding: 20px;
+}
+
+.dashboard .contain .grid .right .avatar::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 1px;
+}
+
+.dashboard .contain .grid .right .avatar picture {
+    width: 50%;
+}
+
+.dashboard .contain .grid .right .avatar picture img {
+    width: 100%;
+}
+
+.dashboard .contain .grid .right .avatar .user .name {
+    font-size: 25px;
+    font-weight: var(--fontw700);
+    color: var(--main-color);
+}
+
+.dashboard .contain .grid .right .tools ul {
+    justify-content: stretch;
+}
+
+.dashboard .contain .grid .right .tools ul li {
+    font-size: 20px;
+    transition: var(--tran);
+    border: 2px solid var(--white);
+    padding: 20px;
+    gap: 20px;
+}
+
+.dashboard .contain .grid .right .tools ul li img {
+    width: 50px;
+}
+
+.dashboard .contain .grid .right .tools ul li:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+    .dashboard .contain .grid .right .tools ul li {
+        display: grid;
+        justify-content: center;
+    }
+    .dashboard .contain .grid .right .tools ul li img {
+        order: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+}
+
+@media (max-width:992px) {
+    .dashboard .contain {
+        padding-top: var(--padd150);
+        padding-bottom: var(--padd100);
+        gap: 50px;
+    }
+    .dashboard .contain .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    .dashboard .contain .grid .left {
+        gap: 50px;
+        order: 1;
+    }
+    .dashboard .contain .grid .left .project {
+        gap: 25px;
+        padding: 18px;
+    }
+    .dashboard .contain .grid .left .project h3 {
+        font-size: 28px;
+    }
+    .dashboard .contain .grid .left .project .more a {
+        font-size: 18px;
+    }
+    .dashboard .contain .grid .left .project::after {
+        padding: 8px;
+        font-size: 22px;
+    }
+    .dashboard .contain .grid .right {
+        display: flex;
+    }
+    .dashboard .contain .grid .right .avatar {
+        display: none;
+    }
+    .dashboard .contain .grid .right .tools ul {
+        padding: 15px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .dashboard .contain .grid .right .tools ul li {
+        font-size: 18px;
+        display: grid;
+        justify-content: stretch;
+        padding: 15px;
+    }
+    .dashboard .contain .grid .right .tools ul li img {
+        display: none;
+    }
+    .dashboard .contain .grid .right .tools ul li span {
+        order: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) {
+    .dashboard .contain {
+        padding-top: var(--padd150);
+        padding-bottom: var(--padd100);
+        gap: 50px;
+    }
+    .dashboard .contain .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    .dashboard .contain .grid .left {
+        gap: 50px;
+        order: 1;
+    }
+    .dashboard .contain .grid .left .project {
+        gap: 20px;
+        padding: 15px;
+    }
+    .dashboard .contain .grid .left .project h3 {
+        font-size: 20px;
+    }
+    .dashboard .contain .grid .left .project .more a {
+        font-size: 15px;
+    }
+    .dashboard .contain .grid .left .project::after {
+        left: 0;
+        top: -40px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .dashboard .contain .grid .right {
+        justify-content: stretch;
+        display: grid;
+    }
+    .dashboard .contain .grid .right .tools ul li {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .dashboard .contain .grid .right .tools ul {
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*End Dashboard*/
+
+
+/*Start Add New Project*/
+
+.pop .contain {
+    position: absolute;
+    background-color: var(--white);
+    gap: 20px;
+    box-shadow: var(--box-shadow-sign);
+    padding: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    justify-content: stretch;
+    overflow-y: scroll;
+}
+
+.pop .contain form {
+    justify-content: stretch;
+    gap: 20px;
+}
+
+.pop .contain form>div label {
+    text-align: left;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: var(--fontw700);
+}
+
+.pop .contain form>div {
+    justify-content: stretch
+}
+
+.pop .contain form input,
+.pop .contain form textarea {
+    border: 2px solid var(--main-color);
+    width: 100%;
+}
+
+.pop .contain form textarea {
+    padding: 20px;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    height: 250px;
+}
+
+.pop .contain form .btns {
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.pop .contain form .btns button {
+    background-color: var(--main-color);
+    color: var(--white);
+    transition: var(--tran);
+    border: 2px solid var(--main-color);
+    font-size: 20px;
+}
+
+.pop .contain form .btns button:hover {
+    background-color: var(--white);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    .pop .contain {
+        padding: 30px;
+        width: 70%;
+    }
+    .pop .contain form textarea {
+        padding: 15px;
+        font-size: 18px;
+        height: 225px;
+    }
+    .pop .contain form .btns {
+        gap: 40px;
+    }
+    .pop .contain form .btns button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .pop .contain {
+        padding: 20px;
+        width: 80%;
+    }
+    .pop .contain form textarea {
+        padding: 10px;
+        font-size: 16px;
+        height: 200px;
+    }
+    .pop .contain form .btns {
+        gap: 30px;
+    }
+    .pop .contain form .btns button {
+        font-size: 18px;
+    }
+}
+
+
+/*end Add New Project*/
+
+
+/*Start Footer*/
+
+footer .contain {
+    padding-top: var(--padd100);
+    padding-bottom: var(--padd50);
+    gap: 10px;
+}
+
+footer .contain ul {
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+footer .contain ul li a {
+    text-decoration: underline;
+    color: var(--gray);
+    transition: var(--tran);
+    font-size: 20px;
+}
+
+footer .contain ul li a:hover {
+    color: var(--black);
+}
+
+footer .contain .logo span {
+    font-size: 30px;
+}
+
+footer .contain span {
+    font-size: 20px;
+}
+
+
+/*Start Sign Footer*/
+
+
+/*End Sign Footer*/
+
+@media (max-width:992px) {
+    footer .contain ul {
+        gap: 60px;
+    }
+    footer .contain ul li a {
+        font-size: 18px;
+    }
+    footer .contain .logo span {
+        font-size: 25px;
+    }
+    footer .contain span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    footer .contain ul {
+        gap: 20px;
+    }
+    footer .contain ul li a {
+        font-size: 15px;
+    }
+    footer .contain .logo span {
+        font-size: 20px;
+    }
+    footer .contain span {
+        font-size: 16px;
+    }
+}
+
+
+/*End Footer*/
